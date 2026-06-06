@@ -5,7 +5,7 @@ project(RetroEngine)
 set(DECOMP_VERSION 1.3.3)
 
 option(RETRO_FORCE_CASE_INSENSITIVE "Forces case insensivity." OFF)
-option(RETRO_MOD_LOADER "Enables or disables the mod loader." ON)
+option(RETRO_MOD_LOADER "Enables or disables the mod loader." OFF)
 option(RETRO_USE_HW_RENDER "Enables usage of Hardware Render as an option." ON)
 option(RETRO_DISABLE_PLUS "Disables Plus. Should be set on for any public releases." OFF)
 option(RETRO_ORIGINAL_CODE "Removes any change that differs from the original code, a playable game can't be built this way." OFF)
