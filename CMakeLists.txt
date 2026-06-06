@@ -13,7 +13,7 @@ option(RETRO_ORIGINAL_CODE "Removes any change that differs from the original co
 set(RETRO_SDL_VERSION 2 CACHE STRING "select between SDL2 and SDL1, defaults to SDL2")
 
 if(RETRO_ORIGINAL_CODE)
-    set(RETRO_MOD_LOADER OFF)
+    set(RETRO_MOD_LOADER ON)
 endif()
 
 set(RETRO_NAME "RSDKv3")
