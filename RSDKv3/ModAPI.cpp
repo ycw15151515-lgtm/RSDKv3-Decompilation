@@ -74,9 +74,9 @@ void InitMods()
     if (fs::exists(modPath) && fs::is_directory(modPath)) {
         std::string mod_config = modPath.string() + "/modconfig.ini";
         FileIO *configFile     = fOpen(mod_config.c_str(), "r");
-        if (configFile) {
+        if (configFile) {modconfig.ini
             fClose(configFile);
-            IniParser modConfig(mod_config.c_str(), false);
+            IniParser modConfig(mod_config.c_str(), true);
 
             for (int m = 0; m < modConfig.items.size(); ++m) {
                 bool active = false;
