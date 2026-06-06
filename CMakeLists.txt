@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.10)
 
 project(RetroEngine)
 
-set(DECOMP_VERSION 1.3.3)
+set(DECOMP_VERSION 1.3.1)
 
 option(RETRO_FORCE_CASE_INSENSITIVE "Forces case insensivity." OFF)
 option(RETRO_MOD_LOADER "Enables or disables the mod loader." ON)
@@ -13,7 +13,7 @@ option(RETRO_ORIGINAL_CODE "Removes any change that differs from the original co
 set(RETRO_SDL_VERSION 2 CACHE STRING "select between SDL2 and SDL1, defaults to SDL2")
 
 if(RETRO_ORIGINAL_CODE)
-    set(RETRO_MOD_LOADER OFF)
+    set(RETRO_MOD_LOADER ON)
 endif()
 
 set(RETRO_NAME "RSDKv3")
